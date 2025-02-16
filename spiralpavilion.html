@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+   <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>My website:)</title>
+  <meta name="description" content="">
+  <meta name="author" Evilia="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Helvetica:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="images/coding_cat_2.jpg">
+
+  <style>
+    /* Debugging: Centered two-column layout for assignments */
+    .row.example {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px; /* Space between image and text */
+      flex-wrap: wrap; /* Prevents layout break on smaller screens */
+      padding: 20px 0;
+    }
+
+    .example-screenshot {
+      max-width: 350px;
+      width:280px;
+      height: auto;
+      object-fit: cover;
+      border-style: none;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 0;
+      display: block;
+      background-color: transparent;
+      color: #000;
+    }
+
+    .one-half {
+      flex: 1;
+      text-align: center;
+      max-width: 350px; /* Prevents items from getting too small */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .image-container {
+        text-align: center; /* Centers inline elements like <img> */
+        margin-top: 100px; /* Adds spacing from previous content */
+    }
+  </style>
+
+
+</head>
+<body>
+     <div class="container">
+      <div class="sub-header"> 
+         <h2>SPIRAL PAVILION</h2>
+      </div>
+
+      <div class="docs-section" id="about">
+        <h5>Purpose of this project</h5>
+        <p class="sub-header">An introduction to parametric logic and design while designing and building a pavilion with modular construction. Models were designed on GeoGebra geogmetry</p>
+      </div>
+
+
+      <div class="row example">
+        <div class="one-half">
+          <a class="example-screenshot-wrapper" target="_self" href="spiralpavilion.html">
+            <img class="example-screenshot" src="images/one.png" alt="Week 1 Assignment">
+          </a>
+        </div>
+        <div class="one-half">
+          <h6 class="example-header">PHASE 1</h6>
+          <p class="example-description">
+            Phase one focuses on research origami patterns and the analysis of their geometry with physical models. Our team mainly focused on spiral  folding patterns and the relation between the module and the organizing system.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row example">
+        <div class="one-half">
+          <a class="example-screenshot-wrapper" target="_self" href="spiralpavilion.html">
+            <img class="example-screenshot" src="images/two.png" alt="Week 1 Assignment">
+            <img class="example-screenshot" src="images/three.png" alt="Week 1 Assignment">
+          </a>
+        </div>
+        <div class="one-half">
+          <h6 class="example-header">PHASE 2</h6>
+          <p class="example-description">
+            In phase 2 we focused on designing the structure with descriptive geometry. Goal was to simplify the structure we have created by folding and to preserve the element of the spiral
+         </p>
+         <p class="example-description">
+          
+Solution to the geometric problem. Assuming we have 5 circles that we place in a in order with a set distance between them. If every circle has 5 point, in order to create a spiral, we must connect the first point of the first circle with the second point of the second circle until we connect with the fifth point of the fifth circle. This example led to the decision of designing a grid and then in order to draw the spiral we created a rule that connected the right points of the grid. In order to recreate the pitch change of a spiral we made this rule : Sequence(Sequence(LineSegment(PointsofGrid(n K + k , k), PointsofGrid(n K +k +1 , k+1)), k, 1,K+1), n,0, N/K)
+
+         </p>
+        </div>
+      </div>
+
+      <div class="row example">
+        <div class="one-half">
+          <a class="example-screenshot-wrapper" target="_self" href="spiralpavilion.html">
+            <img class="example-screenshot" src="images/four.png" alt="Week 1 Assignment">
+          </a>
+        </div>
+        <div class="one-half">
+          <h6 class="example-header"></h6>
+          <p class="example-description">
+            After we create the first spiral, we design a second one and those 2 spiral are connected with Line Segments in order to create the space of the pavilion. Height, distances between the two spirals can change whike also depending on  how thick the grid is the way the spiral looks can also be modified
+          </p>
+         
+        </div>
+
+      </div>
+
+      <div class="row example">
+        <div class="one-half">
+          <a class="example-screenshot-wrapper" target="_self" href="spiralpavilion.html">
+            <img class="example-screenshot" src="images/five.jpg" alt="Week 1 Assignment">
+          </a>
+        </div>
+        <div class="one-half">
+          <h6 class="example-header"></h6>
+          <p class="example-description">
+            The module is designed through the basic geometry of 2 pyramids and in order to applied on the spiral the change of parallelogram changes slightly as the spiral progresses through the space.
+          </p>
+
+          <p class="example-description">
+            While making the physical model , we also designed using descriptive geometry  the formulation of the module, that helped us into building the module. 
+          </p>
+         
+        </div>
+
+      </div>
+      <div class="row example">
+        <div class="one-half">
+          <a class="example-screenshot-wrapper" target="_self" href="spiralpavilion.html">
+            <img class="example-screenshot" src="images/IMG_4596 (2).jpg" alt="Week 1 Assignment">
+          </a>
+        </div>
+        <div class="one-half">
+          <h6 class="example-header"></h6>
+          <p class="example-description">
+            Part of a group project. Papamanou Panagiota , Xristina Kyprianoy, Paraskevi Ioulia Chatziparaskevaidou (me)
+          </p>
+         
+        </div>
+
+      </div>
+
+
+
+
+
+     </div>
+
+
+
+
+
+
+</body>
+</html>

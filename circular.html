@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>My website:)</title>
+  <meta name="description" content="">
+  <meta name="author" Evilia="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Helvetica:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="images/coding_cat_2.jpg">
+
+  <style>
+    /* Debugging: Centered two-column layout for assignments */
+    .row.example {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px; /* Space between image and text */
+      flex-wrap: wrap; /* Prevents layout break on smaller screens */
+      padding: 20px 0;
+    }
+
+    .example-screenshot {
+      max-width: 350px;
+      width:280px;
+      height: auto;
+      object-fit: cover;
+      border-style: none;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 0;
+      display: block;
+      background-color: transparent;
+      color: #000;
+    }
+
+    .one-half {
+      flex: 1;
+      text-align: center;
+      max-width: 350px; /* Prevents items from getting too small */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="sub-header"> 
+       <h2>CIRCULAR WEATHER</h2>
+    </div>
+
+
+
+    <div class="docs-section" id="about">
+      <h5>Purpose of this project</h5>
+      <p class="sub-header">This project presents a 24-hour weather prognosis for 3 days. 
+      In the project we used data from an open weather API. The data is visualized through a circular diagram. Each day have 3 circles(1 for temperature 1 for humidity and 1 for wind levels) and each small circle represents an hour of the day. The user can choose a city of their choice. The purpose of this project was to experiment with data visualization while it was a theme everyone in the group found interesting. Data visualization finds practice a lot in architectural fields </p>
+    </div>
+
+    <div class="row example">
+      <div class="one-half">
+        <a class="example-screenshot-wrapper" target="_self" href="spiralpavilion.html">
+          <img class="example-screenshot" src="images/hai.jpg" alt="Week 1 Assignment">
+        </a>
+      </div>
+      <div class="one-half">
+        <h6 class="example-header">CODE ANALYSIS</h6>
+        <p class="example-description">
+        We use loadJSON(url) in order to turn our data into JSON format (making them into objects).  With SelectPlace() and handleData(data) we locate the data we want to use.
+        </p>
+        <p class="example-description">
+        In the draw function we draw the circles. We use if statement in nested loop in order to determine the difference in colors as different data progresses. Specifically the color changes for different temperatures but also as high as the  temperature is so the size of the circle changes and becomes bigger.  For the circles we use a mutual center x,y and we use sin and cos to draw the circles that surround it .
+        </p>
+      </div>
+    </div>
+
+    <div class="docs-section" id="about">
+      <p class="sub-header"> Part of a group project. Papamanou Panagiota , Xristina Kyprianoy, Paraskevi Ioulia Chatziparaskevaidou (me) </p>
+    </div>
+
+
+
+   
+
+   </div> 
+</body>
+</html>
